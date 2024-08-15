@@ -11,6 +11,7 @@ import Job7 from './components/Job7';
 import Job8 from './components/Job8';
 import New1 from './components/New1';
 import AnimatedSection from './components/AnimatedSection'; // Import the new component
+import Ftime from './components/Timeline';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       <div className=' flex items-center justify-center flex-col'>
         <AnimatedSection>
           <New1 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Ftime />
         </AnimatedSection>
         <AnimatedSection>
           <Alljob />
