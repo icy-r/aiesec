@@ -6,7 +6,7 @@ function TabContent({ activeTab }) {
       return (
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
           <h3 className="text-white text-2xl font-bold mb-4">Job Description</h3>
-          <ul className="text-white text-lg space-y-4">
+          <ul className="text-white text-lg space-y-4 text-wrap">
             <li>Responsible for finding a suitable venue and venue management</li>
             <li>Responsible for all logistic requirements before and within the project</li>
             <li>Responsible for in-project event management</li>
@@ -53,7 +53,7 @@ function Job6() {
   const [activeTab, setActiveTab] = useState('description');
 
   return (
-    <div className="flex flex-col items-center py-8 px-4 md:px-8">
+    <div className="flex flex-col md:min-w-full items-center py-8 px-4 md:px-8">
       <h2 className="text-white text-4xl font-extrabold mb-6">
         OCVP Logistics & Events x3
       </h2>

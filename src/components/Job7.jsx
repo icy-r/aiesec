@@ -58,7 +58,7 @@ function Job7() {
   const [activeTab, setActiveTab] = useState('description');
 
   return (
-    <div className="flex flex-col items-center py-8 px-4 md:px-8">
+    <div className="flex flex-col md:min-w-full items-center py-8 px-4 md:px-8">
       <h2 className="text-white text-4xl font-extrabold mb-6">
         OCVP PR x2
       </h2>

@@ -52,12 +52,13 @@ function Job8() {
   const [activeTab, setActiveTab] = useState('description');
 
   return (
-    <div className="h-screen w-full max-w-screen-lg mx-auto flex flex-col items-center p-6">
+    <div className="flex flex-col md:min-w-full items-center py-8 px-4 md:px-8">
       <h2 className="text-white text-4xl font-extrabold mb-6">
         OCVP Web Development x1
       </h2>
 
-      <div className="w-full bg-gray-800 rounded-lg shadow-lg">
+      {/* Adjusted the width by adding max-w-4xl */}
+      <div className="w-full max-w-4xl bg-gray-800 rounded-lg shadow-lg overflow-auto">
         <div className="flex border-b border-gray-700">
           <button
             className={`w-1/3 py-4 text-center text-white text-lg font-semibold ${activeTab === 'description' ? 'bg-gray-700' : 'bg-gray-800'}`}
