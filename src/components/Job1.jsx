@@ -57,7 +57,7 @@ function Job1() {
   const [activeTab, setActiveTab] = useState('description');
 
   return (
-    <div className="flex flex-col items-center justify-center py-8 px-4 md:px-8">
+    <div className="flex flex-col md:min-w-full items-center justify-center py-8 px-4 md:px-8">
       <h2 className="text-white text-4xl font-extrabold mb-6">
         Organizing Committee President x1
       </h2>
