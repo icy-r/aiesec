@@ -24,7 +24,7 @@ const AnimatedSection = ({ children }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 0.6 }}
-      className='w-full max-w-4xl mx-auto p-6 mb-6 flex items-center justify-center'
+      className='w-full mx-auto p-6 mb-6 flex items-center justify-center'
     >
       {children}
     </motion.div>

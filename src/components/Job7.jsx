@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import './App.css'; // Import your Tailwind CSS file here
 
 function TabContent({ activeTab }) {
   switch (activeTab) {
@@ -30,7 +29,7 @@ function TabContent({ activeTab }) {
             <li>Planning skills</li>
             <li>Event management skills</li>
             <li>Critical thinking</li>
-            <li>Events creating skills</li>
+            <li>Event creation skills</li>
             <li>Platform management skills</li>
             <li>Campaign management skills</li>
             <li>Time management skills</li>
@@ -59,28 +58,31 @@ function Job7() {
   const [activeTab, setActiveTab] = useState('description');
 
   return (
-    <div className="h-screen w-10/12 flex flex-col items-center ">
+    <div className="flex flex-col items-center py-8 px-4 md:px-8">
       <h2 className="text-white text-4xl font-extrabold mb-6">
         OCVP PR x2
       </h2>
 
-      <div className="w-full max-w-4xl bg-gray-800 rounded-lg shadow-lg">
+      <div className="w-full max-w-4xl bg-gray-800 rounded-lg shadow-lg overflow-auto">
         <div className="flex border-b border-gray-700">
           <button
             className={`w-1/3 py-4 text-center text-white text-lg font-semibold ${activeTab === 'description' ? 'bg-gray-700' : 'bg-gray-800'}`}
             onClick={() => setActiveTab('description')}
+            aria-selected={activeTab === 'description'}
           >
             Job Description
           </button>
           <button
             className={`w-1/3 py-4 text-center text-white text-lg font-semibold ${activeTab === 'skills' ? 'bg-gray-700' : 'bg-gray-800'}`}
             onClick={() => setActiveTab('skills')}
+            aria-selected={activeTab === 'skills'}
           >
             Skills and Knowledge
           </button>
           <button
             className={`w-1/3 py-4 text-center text-white text-lg font-semibold ${activeTab === 'kpi' ? 'bg-gray-700' : 'bg-gray-800'}`}
             onClick={() => setActiveTab('kpi')}
+            aria-selected={activeTab === 'kpi'}
           >
             KPI / MoS
           </button>

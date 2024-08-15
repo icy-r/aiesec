@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import './App.css'; // Import your Tailwind CSS file here
 
 function TabContent({ activeTab }) {
   switch (activeTab) {
@@ -35,7 +34,7 @@ function TabContent({ activeTab }) {
       return (
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
           <h3 className="text-white text-2xl font-bold mb-4">KPI / MoS</h3>
-          <ul className="text-white  space-y-4">
+          <ul className="text-white text-lg space-y-4">
             <li># of Website Visitors</li>
             <li>% of Deadlines Met</li>
             <li># of Functional Integrations</li>
@@ -53,28 +52,31 @@ function Job8() {
   const [activeTab, setActiveTab] = useState('description');
 
   return (
-    <div className="h-screen w-10/12 flex flex-col items-center ">
+    <div className="h-screen w-full max-w-screen-lg mx-auto flex flex-col items-center p-6">
       <h2 className="text-white text-4xl font-extrabold mb-6">
         OCVP Web Development x1
       </h2>
 
-      <div className="w-full max-w-4xl bg-gray-800 rounded-lg shadow-lg">
+      <div className="w-full bg-gray-800 rounded-lg shadow-lg">
         <div className="flex border-b border-gray-700">
           <button
             className={`w-1/3 py-4 text-center text-white text-lg font-semibold ${activeTab === 'description' ? 'bg-gray-700' : 'bg-gray-800'}`}
             onClick={() => setActiveTab('description')}
+            aria-selected={activeTab === 'description'}
           >
             Job Description
           </button>
           <button
             className={`w-1/3 py-4 text-center text-white text-lg font-semibold ${activeTab === 'outcomes' ? 'bg-gray-700' : 'bg-gray-800'}`}
             onClick={() => setActiveTab('outcomes')}
+            aria-selected={activeTab === 'outcomes'}
           >
             Learning Outcomes
           </button>
           <button
             className={`w-1/3 py-4 text-center text-white text-lg font-semibold ${activeTab === 'kpi' ? 'bg-gray-700' : 'bg-gray-800'}`}
             onClick={() => setActiveTab('kpi')}
+            aria-selected={activeTab === 'kpi'}
           >
             KPI / MoS
           </button>

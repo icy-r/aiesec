@@ -72,6 +72,9 @@ button:focus-visible {
   }
 } */
 
+:root{
+  background-image: linear-gradient(to right, #D6BCFA, #F87171);
+}
 
 p{
   text-align: left;

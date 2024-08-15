@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className='bg-gradient-to-r from-purple-300 to-pink-950 flex items-center justify-center flex-col'>
+      <div className=' flex items-center justify-center flex-col'>
         <AnimatedSection>
           <New1 />
         </AnimatedSection>
