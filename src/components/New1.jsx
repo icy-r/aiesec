@@ -20,7 +20,7 @@ function New1() {
                 </div>
             </div>
             
-            <div className="imagevw md:max-w-2xl m-4 p-8 text-left">
+            <div className="imagevw md:max-w-2xl m-2 p-2 text-left">
                 <img 
                     src={ct65Image}
                     alt="image" 
