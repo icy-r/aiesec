@@ -26,14 +26,14 @@ function Alljob() {
 
   const JobCard = ({ title, count }) => (
     <div className='bg-gray-800 flex gap-4
-     p-6 rounded-lg shadow-lg w-full max-w-sm text-center'>
+     p-6 rounded-lg shadow-lg w-full max-w-sm justify-between items-center'>
       <h3 className='text-xl font-semibold mb-2'>{title}</h3>
       <p className='text-lg text-gray-400'>x{count}</p>
     </div>
   );
 
   return (
-    <div className="text-white min-h-screen flex flex-col items-center py-12 px-4">
+    <div className="text-white min-h-screen  flex flex-col items-center py-12 px-4">
       <h2 className="text-4xl font-extrabold mb-8 text-center">Team Structure</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {jobs.map((job, index) => (
