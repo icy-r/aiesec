@@ -1,47 +1,55 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-import LandingPage from './components/Landing'
-import Home from './components/Home'
-import Header from './components/Header'
-import Alljob from './components/Alljob.jsx'
-import Job1 from './components/Job1'
-// import '../src/assets/bg1.webp'
-import New1 from './components/New1.jsx'
-import Job2 from './components/Job2.jsx'
-import Job3 from './components/Job3.jsx'
-import Job4 from './components/Job4.jsx'
-import Job5 from './components/Job5.jsx'
-import Job6 from './components/Job6.jsx'
-import Job8 from './components/Job8.jsx'
-import Job7 from './components/Job7.jsx'
+import React from 'react';
+import Header from './components/Header';
+import Alljob from './components/Alljob';
+import Job1 from './components/Job1';
+import Job2 from './components/Job2';
+import Job3 from './components/Job3';
+import Job4 from './components/Job4';
+import Job5 from './components/Job5';
+import Job6 from './components/Job6';
+import Job7 from './components/Job7';
+import Job8 from './components/Job8';
+import New1 from './components/New1';
+import AnimatedSection from './components/AnimatedSection'; // Import the new component
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-    <Header />
-    <div className='bg-gradient-to-r from-purple-400 to-pink-950 flex items-center justify-center flex-col' >
-      
-      <New1 />
-      <Alljob />
-      <Job1 />
-      <Job2 />
-      <Job3 />
-      <Job4 />
-      <Job5 />
-      <Job6 />
-      <Job7 />
-      <Job8 />
-      {/* <Home />
-      
-      <Job1 /> */}
-      {/* <LandingPage /> */}
-    </div>
+      <Header />
+      <div className='bg-gradient-to-r from-purple-300 to-pink-950 flex items-center justify-center flex-col'>
+        <AnimatedSection>
+          <New1 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Alljob />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job1 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job2 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job3 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job4 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job5 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job6 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job7 />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Job8 />
+        </AnimatedSection>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

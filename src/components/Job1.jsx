@@ -58,11 +58,12 @@ function Job1() {
   const [activeTab, setActiveTab] = useState('description');
 
   return (
-    <div className="h-screen w-10/12 flex flex-col items-center">
+    <div className="h-screen w-10/12 flex flex-col items-center justify-center">
+      <div>
       <h2 className="text-white text-4xl font-extrabold mb-6">
         Organizing Committee President x1
       </h2>
-
+      </div>
       <div className="w-full max-w-4xl bg-gray-800 rounded-lg shadow-lg">
         <div className="flex border-b border-gray-700">
           <button
