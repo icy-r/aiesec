@@ -12,11 +12,13 @@ import Job8 from './components/Job8';
 import New1 from './components/New1';
 import AnimatedSection from './components/AnimatedSection'; // Import the new component
 import Ftime from './components/Timeline';
+import Float from './components/Float';
 
 function App() {
   return (
     <>
       <Header />
+      <Float />
       <div className=' flex items-center justify-center flex-col'>
         <AnimatedSection>
           <New1 />

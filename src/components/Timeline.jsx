@@ -49,7 +49,7 @@ const Ftime = () => {
           />
         </ConfigProvider>
       </div>
-      <div className="imagevw max-w-2xl m-4 p-8 text-left">
+      <div className="imagevw hidden md:flex max-h-screen max-w-2xl m-4 p-8 text-left">
         <img
           src={ct66Image}
           alt="image"
