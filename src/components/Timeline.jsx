@@ -22,7 +22,7 @@ const Ftime = () => {
   };
 
   return (
-    <div className="mx-auto h-screen p-6 mb-6 flex flex-col-reverse md:flex-row-reverse items-center justify-center w-full">
+    <div className="mx-auto h-screen p-6 md:mb-6 flex flex-col-reverse md:flex-row-reverse items-center justify-center w-full">
       <div>
         <ConfigProvider theme={globalTokens}>
           <Timeline
