@@ -58,7 +58,12 @@ function Job8() {
           OCVP Web Development x1
         </div>
         <div>
-          <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">
+        <button
+            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
+            onClick={() =>
+              (window.location.href = "https://forms.gle/Mhqez7JrPM4iQE9A9" )
+            }
+          >
             Apply Now
           </button>
         </div>
