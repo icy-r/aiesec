@@ -65,6 +65,10 @@ const App = () => {
   };
 
     const globalTokens = {
+        token: {
+            colorPrimary: "#1677ff",
+            controlHeightLG: "50px",
+        },
         Component: {
             
             }
