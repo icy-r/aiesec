@@ -53,9 +53,16 @@ function Job4() {
 
   return (
     <div className="flex flex-col md:min-w-full items-center py-8 px-4 md:px-8">
-      <h2 className="text-white text-4xl font-extrabold mb-6">
-        OCVP Partnership Development x4
-      </h2>
+      <div className="flex md:gap-3 justify-around flex-grow w-full">
+        <div className="text-white text-4xl font-extrabold mb-6">
+          OCVP Partnership Development x4
+        </div>
+        <div>
+          <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">
+            Apply Now
+          </button>
+        </div>
+      </div>
 
       <div className="w-full max-w-4xl bg-gray-800 rounded-lg shadow-lg overflow-auto">
         <div className="flex border-b border-gray-700">
