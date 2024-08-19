@@ -13,6 +13,7 @@ import New1 from './components/New1';
 import AnimatedSection from './components/AnimatedSection'; // Import the new component
 import Ftime from './components/Timeline';
 import Float from './components/Float';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <AnimatedSection>
           <Job8 />
         </AnimatedSection>
+        {/* <Footer /> */}
       </div>
     </>
   );

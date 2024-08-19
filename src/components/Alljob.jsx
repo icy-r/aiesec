@@ -26,7 +26,7 @@ function Alljob() {
 
   const JobCard = ({ title, count }) => (
     <div className='bg-gray-800 flex gap-4
-     p-6 rounded-lg shadow-lg w-full max-w-sm justify-between items-center'>
+     p-6 rounded-lg shadow-lg w-full max-w-sm justify-between items-center hover:shadow-xl transition duration-300 hover:scale-105'>
       <h3 className='text-xl font-semibold mb-2'>{title}</h3>
       <p className='text-lg text-gray-400'>x{count}</p>
     </div>

@@ -53,13 +53,13 @@ function Job4() {
 
   return (
     <div className="flex flex-col md:min-w-full items-center py-8 px-4 md:px-8">
-      <div className="flex md:gap-3 justify-around flex-grow w-full">
+      <div className="flex md:gap-3 justify-center flex-grow w-full">
         <div className="text-white text-4xl font-extrabold mb-6">
           OCVP Partnership Development x4
         </div>
         <div>
         <button
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
+            className="bg-blue-500 hover:shadow-xl transition duration-300 hover:scale-105 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
             onClick={() =>
               (window.location.href = "https://forms.gle/Mhqez7JrPM4iQE9A9" )
             }

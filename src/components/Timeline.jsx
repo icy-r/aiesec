@@ -49,11 +49,11 @@ const Ftime = () => {
           />
         </ConfigProvider>
       </div>
-      <div className="imagevw hidden md:flex max-h-screen max-w-2xl m-4 p-8 text-left">
+      <div className="imagevw hidden md:flex  max-h-screen max-w-2xl m-4 p-8 text-left">
         <img
           src={ct66Image}
           alt="image"
-          className="rounded-lg shadow-lg max-h-screen"
+          className="rounded-lg shadow-lg hover:shadow-xl transition duration-300 hover:scale-105 max-h-screen"
         />
       </div>
     </div>
